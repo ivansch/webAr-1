@@ -9,7 +9,7 @@ export default function NavBar() {
       </a>
 
       <NavLink to="/home" className="nav-link">
-        <p className="parrNav">HOMEsss</p>
+        <p className="parrNav">HOME</p>
       </NavLink>
 
       <NavLink to="/servicios" className="nav-link">
@@ -27,7 +27,7 @@ export default function NavBar() {
       {/* <NavLink
           to ='/contacto'
           className = "parrNav" >
-            CONTACTO
+            CONTACTO 
           </NavLink> */}
       <a className="nav-link" href="#contacto">
         <p className="parrNav">CONTACTO</p>
