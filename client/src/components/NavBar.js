@@ -9,7 +9,7 @@ export default function NavBar() {
       </a>
 
       <NavLink to="/home" className="nav-link">
-        <p className="parrNav">HOMEs</p>
+        <p className="parrNav">HOMEsss</p>
       </NavLink>
 
       <NavLink to="/servicios" className="nav-link">
