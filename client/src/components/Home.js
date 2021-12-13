@@ -1,12 +1,12 @@
-import React, 
-{ 
- useEffect, 
- useState 
+import React,
+{
+ useEffect,
+ useState
 } from "react";
 
-import { 
- useSelector, 
- useDispatch 
+import {
+ useSelector,
+ useDispatch
 }   from "react-redux";
 
 import {
@@ -15,12 +15,12 @@ import {
 import Footer from './Footer.js'
 
 
-export default function Home () { 
+export default function Home () {
 
     const dispatch = useDispatch ();
 
 
-  
+
     return (
       <div>
         <div
@@ -154,7 +154,7 @@ export default function Home () {
           <h3 class="title3">
             Te ayudaremos a encontrar la solución que necesitas.
           </h3>
-          <button type="button" name="button" class="btn">
+          <button type="button" name="button" class="btnGreen">
             <p class="pBtn">CONTACTANOS</p>
           </button>
         </section>
@@ -201,4 +201,3 @@ export default function Home () {
       </div>
     );
 };
-

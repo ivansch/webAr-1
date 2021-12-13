@@ -15,13 +15,13 @@ import Footer from "./Footer.js"
 export default function Proyectos() {
   const dispatch = useDispatch(); // instancio el useDispatch para poder usarlo como funcion y pasarle las acciones importadas de actions
 
-  
+
   const allProjects = useSelector((state) => state.allProjects);
-  
+
   console.log("soy el allProjects: ", allProjects);
-  
+
   const [input, setInput] = useState("");
-  
+
 useEffect(() => {
   dispatch(getAllProjects());
 }, [dispatch]);
@@ -51,10 +51,45 @@ useEffect(() => {
         </div>)
     }
     <div>
+    <div id="productos">
+    <div className="cardServicio">
+        <img className="imgCardServicio" src="images/maiz.jpg" alt="" />
+        <h4 className="titCardProductos">PRODUCTO 1</h4>
+        <p className="parrCard">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit nullam,
+          mauris conubia odio ient pretium duis laoreet condimentum
+        </p>
+        <button type="button" name="button" className="btnCardProductos">
+          <p className="pBtnCardProduct">VER MÁS</p>
+        </button>
+    </div>
+    <div className="cardServicio">
+        <img className="imgCardServicio" src="images/maiz.jpg" alt="" />
+        <h4 className="titCardProductos">PRODUCTO 1</h4>
+        <p className="parrCard">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit nullam,
+          mauris conubia odio ient pretium duis laoreet condimentum
+        </p>
+        <button type="button" name="button" className="btnCardProductos">
+          <p className="pBtnCardProduct">VER MÁS</p>
+        </button>
+    </div>
+    <div className="cardServicio">
+        <img className="imgCardServicio" src="images/maiz.jpg" alt="" />
+        <h4 className="titCardProductos">PRODUCTO 2</h4>
+        <p className="parrCard">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit nullam,
+        mauris conubia odio ient pretium duis laoreet condimentum
+        </p>
+        <button type="button" name="button" className="btnCardProductos">
+          <p className="pBtnCardProduct">VER MÁS</p>
+        </button>
+    </div>
+    </div>
         <Footer/>
     </div>
 </div>
-        
+
 
   );
 }

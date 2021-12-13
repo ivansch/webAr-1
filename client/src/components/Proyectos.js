@@ -15,17 +15,17 @@ import Footer from "./Footer.js"
 export default function Proyectos() {
   const dispatch = useDispatch(); // instancio el useDispatch para poder usarlo como funcion y pasarle las acciones importadas de actions
 
-  
+
   const allProjects = useSelector((state) => state.allProjects);
-  
+
   console.log("soy el allProjects: ", allProjects);
-  
+
   const [input, setInput] = useState("");
-  
+
   const handlerOnChange = (e) => {
       setInput(e.target.value);
   };
-  
+
   const handlerOnSubmit = (e) => {
     e.preventDefault();
     console.log("soy el input del handlerOnSubmit: ", input);
@@ -69,7 +69,7 @@ useEffect(() => {
                 return (
                     <div key={project.id}>
 
-                        <Card 
+                        <Card
                         title={project.title}
                         image={project.image}
                         parragraph={project.parragraph}
@@ -80,8 +80,9 @@ useEffect(() => {
         </div>)
     }
 </div>
-        
+
       </form>
+      
       <Footer/>
     </div>
   );
